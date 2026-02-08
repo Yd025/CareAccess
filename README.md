@@ -7,3 +7,13 @@ For this year's datathon, I chose the Access to Care pathway. Care access is som
 With that in mind, I wanted to use three ML approaches—K-Means Clustering, Linear Regression, and a simple Deep Learning (MLP) model—to flag subgroups most at risk of poor access to care. I compared which subgroups each method identified and reported accuracy (MSE, R², silhouette) to see which model worked best and which groups to prioritize.
 
 The data came from NHIS Adult Summary Health Statistics (CDC); I focused on access-to-care topics (delayed care, unmet care due to cost, uninsured). I felt that different methods answered different questions—clustering found who looked like the worst-off group, while regression found who was predicted to have the worst access—so the same population could "fall through the cracks" for different reasons depending on which lens I used.
+
+## Software used
+
+- **Python 3**
+- **pandas** — data loading and manipulation
+- **NumPy** — numerical operations
+- **scikit-learn** — preprocessing (StandardScaler), K-Means clustering, Linear Regression, MLP regressor, and metrics (MSE, R², Silhouette score)
+- **Seaborn** — correlation heatmap and visualizations
+- **Matplotlib** — plotting
+- **Jupyter** — notebook environment
